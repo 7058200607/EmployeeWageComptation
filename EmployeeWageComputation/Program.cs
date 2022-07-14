@@ -6,9 +6,10 @@ namespace EmpWageComputation
     {
         static void Main(string[] args)
         {
-
-            int Is_full_time = 1;
+            int Is_Part_Time = 1;
+            int Is_full_time = 2;
             int Emp_Rate_per_Hour=20;
+           
             int Emp_Hour= 0;
             int Emp_Wage=0;
             Random random = new Random();
@@ -17,6 +18,10 @@ namespace EmpWageComputation
             {
                 Emp_Hour = 8;
 
+            }
+            else if(Is_Part_Time == EmpCheck)
+            {
+                Emp_Hour = 4;
             }
             else
             {
