@@ -7,7 +7,7 @@ namespace EmpWageComputation
         public const int Is_Part_Time = 1;
         public const int Is_full_time = 2;
         public const int Emp_Rate_per_Hour = 20;
-        public const int Num_Of_Working_Days = 2;
+        public const int Num_Of_Working_Days = 20;
         static void Main(string[] args)
         {
             int Emp_Hour = 0;
@@ -17,7 +17,7 @@ namespace EmpWageComputation
             for (int Day = 0; Day <= Num_Of_Working_Days; Day++)
             {
                 Random random = new Random();
-                int EmpCheck = random.Next(0, 2);
+                int EmpCheck = random.Next(0, 3);
                 switch (EmpCheck)
                 {
                     case Is_Part_Time:
